@@ -1,0 +1,23 @@
+generated: '2026-07-21'
+method: searched
+source: Microsoft Learn (Azure StorSimple documentation) + Azure SDK deprecation notices
+summary: >-
+  Azure StorSimple is retired. The StorSimple 8000 series (physical + virtual arrays)
+  reached end-of-life in December 2022, and the StorSimple Data Manager service and
+  management SDKs were deprecated on the same timeline. Microsoft guides customers to
+  migrate to Azure File Sync / Azure Files.
+versioning:
+  scheme: azure-resource-manager-api-version
+  note: >-
+    Operations are versioned by the ARM api-version query parameter (e.g.
+    api-version=2017-06-01 for storsimple8000series, api-version=2016-10-01 for the
+    1200 series).
+deprecation:
+  status: end-of-life
+  eol_date: '2022-12-31'
+  policy_url: https://learn.microsoft.com/en-us/azure/storsimple/
+  migration_target: Azure File Sync / Azure Files
+  sdk_deprecated: '2022-12-31'
+status_page:
+  url: https://azure.status.microsoft/en-us/status
+  note: Covered by the general Azure status page (no dedicated StorSimple status page).

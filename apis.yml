@@ -1,27 +1,95 @@
 aid: storsimple
-name: Storsimple
-description: Storsimple is a company surfaced as a portfolio company of mayfield, redpoint-ventures and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/storsimple.png
+name: StorSimple
+description: >-
+  StorSimple was a Santa Clara, California hybrid cloud storage company founded in 2009
+  by Ursheet Parikh and Guru Pangal. Its appliances combined primary storage, tiered
+  cloud archiving, deduplication, compression, and encryption behind iSCSI/SMB
+  interfaces, backed by $31.5M from Index Ventures, Redpoint Ventures, Ignition
+  Partners, and Mayfield Fund. Microsoft acquired StorSimple in November 2012 and
+  folded it into Azure as Azure StorSimple (8000 series physical and virtual arrays,
+  plus the StorSimple Data Manager). The product is managed through Azure Resource
+  Manager under the Microsoft.StorSimple resource provider and its REST API. Azure
+  StorSimple reached end-of-life in December 2022 and is out of support; Microsoft
+  directs customers to Azure File Sync and Azure Files.
 url: https://raw.githubusercontent.com/api-evangelist/storsimple/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - mayfield
 - redpoint-ventures
+- index-ventures
+- ignition-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: microsoft
+x-acquired-date: '2012-11-15'
+x-lifecycle: end-of-life
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Storage
+- Cloud Storage
+- Hybrid Cloud
+- Data Management
+- Enterprise Storage
+- Azure
+- Acquired
+apis:
+- name: Azure StorSimple Management REST API
+  description: >-
+    Azure Resource Manager REST API for managing StorSimple device managers, devices,
+    volumes, backup policies, and jobs under the Microsoft.StorSimple resource provider.
+    Retired (end-of-life December 2022).
+  humanURL: https://learn.microsoft.com/en-us/rest/api/storsimple/
+  baseURL: https://management.azure.com
+  tags:
+  - Storage
+  - Azure
+  properties:
+  - type: Authentication
+    url: authentication/storsimple-authentication.yml
+  - type: Conformance
+    url: conformance/storsimple-conformance.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/storsimple-domain-security.yml
+- type: Packages
+  url: packages/storsimple-packages.yml
+- type: SDKs
+  url: packages/storsimple-packages.yml
+- type: Lifecycle
+  url: lifecycle/storsimple-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/storsimple-lifecycle.yml
+- type: Documentation
+  url: https://learn.microsoft.com/en-us/azure/storsimple/
+- type: APIReference
+  url: https://learn.microsoft.com/en-us/rest/api/storsimple/
 - type: Website
   url: http://www.storsimple.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

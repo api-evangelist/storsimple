@@ -1,0 +1,32 @@
+generated: '2026-07-21'
+method: searched
+source: NuGet Gallery (nuget.org) + Azure SDK for .NET repos
+note: >-
+  StorSimple was acquired by Microsoft (2012) and became Azure StorSimple, managed
+  through Azure Resource Manager (resource provider Microsoft.StorSimple). The
+  first-party client libraries are the Azure management SDKs below. The product line
+  (StorSimple 8000 series) reached end-of-life in December 2022; these packages are
+  published by Microsoft but are deprecated / no longer maintained.
+packages:
+- name: Microsoft.Azure.Management.StorSimple.Fluent
+  registry: nuget
+  official: true
+  language: dotnet
+  url: https://www.nuget.org/packages/Microsoft.Azure.Management.StorSimple.Fluent/
+  latest_version: 1.9.1-beta
+  published: '2018-04-19'
+  target_frameworks:
+  - netstandard1.3
+  - net452
+  repo: https://github.com/Azure/azure-libraries-for-net
+  status: deprecated
+  deprecated_on: '2022-12-31'
+- name: Microsoft.WindowsAzure.Management.StorSimple
+  registry: nuget
+  official: true
+  language: dotnet
+  url: https://www.nuget.org/packages/Microsoft.WindowsAzure.Management.StorSimple/
+  latest_version: 1.0.5-preview
+  status: deprecated
+  deprecated_on: '2022-12-31'
+  note: Legacy Azure Service Management (classic) client; obsolete and unmonitored.

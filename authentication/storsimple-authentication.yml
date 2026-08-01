@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: Microsoft Learn - Azure StorSimple REST API reference (learn.microsoft.com/rest/api/storsimple)
+summary: >-
+  The Azure StorSimple management REST API is an Azure Resource Manager (ARM) API. It
+  is authenticated with Microsoft Entra ID (Azure AD) OAuth 2.0 bearer tokens; every
+  request carries an Authorization: Bearer <token> header scoped to the Azure
+  subscription and the Microsoft.StorSimple resource provider.
+schemes:
+- type: oauth2
+  name: azure_auth
+  flow: authorizationCode
+  provider: Microsoft Entra ID (Azure AD)
+  token_endpoint: https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
+  authorization_endpoint: https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize
+  resource: https://management.azure.com/
+  default_scope: https://management.azure.com/.default
+  transport: header
+  header: Authorization
+  format: Bearer {token}
+  docs: https://learn.microsoft.com/en-us/rest/api/azure/

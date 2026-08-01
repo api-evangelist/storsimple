@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: searched
+source: Microsoft Learn - Azure Resource Manager + StorSimple REST API reference
+note: >-
+  Assertions about cross-cutting standards the Azure StorSimple management REST API
+  conforms to as an Azure Resource Manager (ARM) API.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: >-
+    All requests are authorized with Microsoft Entra ID (Azure AD) OAuth 2.0 bearer
+    tokens against the https://management.azure.com resource.
+- id: oidc
+  conforms: true
+  evidence: >-
+    Microsoft Entra ID exposes an OpenID Connect discovery document at
+    login.microsoftonline.com/{tenant}/v2.0/.well-known/openid-configuration.
+- id: rest-json
+  conforms: true
+  evidence: ARM resource operations exchange JSON representations over HTTPS.
+- id: pagination
+  conforms: true
+  evidence: >-
+    ARM list operations follow the standard nextLink continuation-token pagination
+    contract.
+- id: rfc9457
+  conforms: false
+  evidence: >-
+    Errors use the Azure ARM error envelope ({ "error": { "code", "message" } }), not
+    application/problem+json.
