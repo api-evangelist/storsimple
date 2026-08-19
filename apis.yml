@@ -38,7 +38,7 @@ x-status: acquired
 x-acquired-by: microsoft
 x-acquired-date: '2012-11-15'
 x-lifecycle: end-of-life
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
