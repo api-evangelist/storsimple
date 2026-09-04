@@ -20,6 +20,7 @@ accessModel:
   confidence: medium
   source:
   - authentication
+  - {url: 'http://www.storsimple.com/', status: 301, note: 'declared website redirects to https://learn.microsoft.com/en-us/previous-versions/azure/storage/files/storage-files-migration-storsimple-8000 — a different registrable domain (storsimple.com -> microsoft.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/storsimple.png
